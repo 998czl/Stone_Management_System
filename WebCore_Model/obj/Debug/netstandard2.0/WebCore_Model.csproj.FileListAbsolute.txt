@@ -13,3 +13,4 @@ D:\自建项目\石材管理系统\Stone_Management_System\WebCore_Model\obj\Deb
 D:\自建项目\石材管理系统\Stone_Management_System\WebCore_Model\obj\Debug\netstandard2.0\WebCore_Model.AssemblyInfo.cs
 D:\自建项目\石材管理系统\Stone_Management_System\WebCore_Model\obj\Debug\netstandard2.0\WebCore_Model.dll
 D:\自建项目\石材管理系统\Stone_Management_System\WebCore_Model\obj\Debug\netstandard2.0\WebCore_Model.pdb
+D:\自建项目\石材管理系统\Stone_Management_System\WebCore_Model\obj\Debug\netstandard2.0\WebCore_Model.csprojAssemblyReference.cache
