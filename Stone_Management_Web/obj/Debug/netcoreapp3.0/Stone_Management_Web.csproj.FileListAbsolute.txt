@@ -322,3 +322,4 @@ D:\自建项目\石材管理系统\Stone_Management_System\Stone_Management_Web\
 D:\自建项目\石材管理系统\Stone_Management_System\Stone_Management_Web\obj\Debug\netcoreapp3.0\Stone_Management_Web.csproj.CopyComplete
 D:\自建项目\石材管理系统\Stone_Management_System\Stone_Management_Web\obj\Debug\netcoreapp3.0\Stone_Management_Web.dll
 D:\自建项目\石材管理系统\Stone_Management_System\Stone_Management_Web\obj\Debug\netcoreapp3.0\Stone_Management_Web.pdb
+D:\自建项目\石材管理系统\Stone_Management_System\Stone_Management_Web\obj\Debug\netcoreapp3.0\Razor\Views\Index\Home.cshtml.g.cs
