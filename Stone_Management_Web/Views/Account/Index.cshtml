@@ -1,0 +1,147 @@
+﻿@{
+	Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>@ViewBag.SysTitleName-后台登录</title>
+	<link href="~/css/text.css" rel="stylesheet" />
+	<script src="~/js/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            if (window != top) {
+                top.location.href = location.href;
+            }
+        });
+
+        function checkLogin() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var validatecode = $("#validatecode").val();
+            var mobilevalidatecode = $("#mobilevalidatecode").val();
+            if (username == "") {
+                $("#err-msg").html("请您输入用户名！");
+                return false;
+            }
+            if (password == "") {
+                $("#err-msg").html("请您输入密码！");
+                return false;
+            }
+            if (validatecode == "") {
+                $("#err-msg").html("请您输入验证码！");
+                return false;
+            }
+
+            if ("@ViewBag.CpMoblie" == "open") {
+                if (mobilevalidatecode == "") {
+                    $("#err-msg").html("请您输入短信验证码！");
+                    return false;
+                }
+            }
+        }
+
+        function reloadValidateCode(obj) {
+            obj.src = '/account/validatecode?rnd=' + Math.random();
+        }
+
+        function reloadMobileValidateCode(obj) {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var validatecode = $("#validatecode").val();
+            if (username == "") {
+                $("#err-msg").html("请您输入用户名！");
+                return false;
+            }
+            if (password == "") {
+                $("#err-msg").html("请您输入密码！");
+                return false;
+            }
+            if (validatecode == "") {
+                $("#err-msg").html("请您输入验证码！");
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "/account/GetMobileByName",
+                data: { userName: username, password: password, validateCode: validatecode },
+                success: function (json) {
+                    if (json.code != 1) {
+                        $("#err-msg").html(json.msg);
+                    } else {
+                        $("#warm-msg").html(json.msg);
+                        settime(obj);
+                    }
+                },
+            });
+        }
+
+        var countdown = 180;
+        function settime(obj) {
+            obj = $('#btn-send');
+            if (countdown == 0) {
+                obj.removeAttr("disabled").css("background", "#ff5555");
+                obj.text("获取验证码");
+                countdown = 180;
+                return;
+            } else {
+                obj.attr('disabled', "disabled").css("background", "#ababab");
+                obj.text("重新发送(" + countdown + ")");
+                countdown--;
+            }
+            setTimeout(function () {
+                settime(obj);
+            }, 1000);
+        }
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="register-wrap">
+			<div class="logo-title"><img src="/@ViewBag.LoginImg" /></div>
+			<form action="/account/Index" method="post">
+				<div class="register-center">
+					<h4>后台登录系统</h4>
+					<div id="err-msg" style="height: 22px;color:red; font-size:12px; text-align: center;">
+						@Html.ViewBag.Content
+					</div>
+					<div class="regsiter-input">
+						<div>
+							<span><img src="/content/img/dls-phone.png" /></span>
+							<input type="text" placeholder="请输入用户名" id="username" name="username" />
+						</div>
+						<div>
+							<span><img src="/content/img/dls-lock.png" /></span>
+							<input type="password" placeholder="请输入密码" id="password" name="password" />
+						</div>
+						<div class="yanz fl">
+							<span><img src="/content/img/dls-yzm.png" /></span>
+							<input type="text" placeholder="请输入验证码" id="validatecode" name="validatecode" />
+						</div>
+						<span class="yanz-img fr" style="padding-top: 5px;">
+							<img src="/account/validatecode" onclick="reloadValidateCode(this)" style="width:80px; height:30px; cursor:pointer;" />
+						</span>
+						@if (ViewBag.CpMoblie == "open")
+						{
+							<p class="clearfix"></p>
+							<div class="yanz fl">
+								<span><img src="/content/img/emaile.png"></span>
+								<input type="text" id="mobilevalidatecode" placeholder="验证码3小时内有效" name="mobileValidateCode" />
+							</div>
+							<span>
+								<button type="button" id="btn-send" class="validatecode" style="padding-top: 2px;" onclick="reloadMobileValidateCode(this)">获取验证码</button>
+							</span>
+							<p class="clearfix"></p>
+							<label id="warm-msg" style="height: 20px;color:red; font-size:14px; text-align: center;">
+							</label>
+						}
+						<p class="clearfix"></p>
+						<button type="submit" onclick="return checkLogin()" class="btn btn-sure">确&nbsp;认</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
