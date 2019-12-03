@@ -30,7 +30,7 @@ namespace Stone_Management_Web.Controllers
 		{
 			if (HttpContext.Session.GetString("VALIDATE_CODE") == null || !validateCode.Equals(HttpContext.Session.GetString("VALIDATE_CODE")))
 			{
-				ViewBag.Content = "验证码输入不正确！";
+				ViewBag.Content = "验证码输入不正确!";
 				ViewBag.CpMoblie = "false";
 				ViewBag.LoginImg = Setting.loginImg;
 				return View();
