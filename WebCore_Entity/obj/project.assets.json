@@ -7041,11 +7041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
+      "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
       "projectName": "WebCore_Entity",
-      "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
+      "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
       "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-      "outputPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\obj\\",
+      "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7058,17 +7058,17 @@
         "netstandard2.0"
       ],
       "sources": {
-        "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
-              "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj"
+            "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
+              "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj"
             },
-            "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
-              "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj"
+            "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
+              "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj"
             }
           }
         }

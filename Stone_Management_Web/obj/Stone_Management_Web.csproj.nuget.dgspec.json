@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj": {}
+    "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj": {}
   },
   "projects": {
-    "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj": {
+    "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
+        "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
         "projectName": "Stone_Management_Web",
-        "projectPath": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
+        "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
         "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-        "outputPath": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\obj\\",
+        "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -24,14 +24,14 @@
           "netcoreapp3.0"
         ],
         "sources": {
-          "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
-                "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj"
+              "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
+                "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
+    "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
+        "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
         "projectName": "WebCore_Entity",
-        "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
+        "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj",
         "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-        "outputPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\obj\\",
+        "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -114,17 +114,17 @@
           "netstandard2.0"
         ],
         "sources": {
-          "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
-                "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj"
+              "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
+                "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj"
               },
-              "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
-                "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj"
+              "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
+                "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj"
               }
             }
           }
@@ -149,6 +149,10 @@
             "Autofac.Extras.DynamicProxy": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -183,14 +187,14 @@
         }
       }
     },
-    "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
+    "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj",
+        "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj",
         "projectName": "WebCore_Model",
-        "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj",
+        "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\WebCore_Model.csproj",
         "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-        "outputPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Model\\obj\\",
+        "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -203,7 +207,7 @@
           "netstandard2.0"
         ],
         "sources": {
-          "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -245,14 +249,14 @@
         }
       }
     },
-    "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
+    "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj",
+        "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj",
         "projectName": "WebCore_Utils",
-        "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj",
+        "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\WebCore_Utils.csproj",
         "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-        "outputPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\obj\\",
+        "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -265,7 +269,7 @@
           "netstandard2.0"
         ],
         "sources": {
-          "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

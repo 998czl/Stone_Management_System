@@ -120,6 +120,31 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3199,6 +3224,7 @@
           "Autofac": "4.9.4",
           "Autofac.Extensions.DependencyInjection": "5.0.1",
           "Autofac.Extras.DynamicProxy": "4.5.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "StackExchange.Redis": "2.0.601",
           "WebCore_Model": "1.0.0",
           "WebCore_Utils": "1.0.0",
@@ -3368,6 +3394,32 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
         "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.html.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -9950,11 +10002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
+      "projectUniqueName": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
       "projectName": "Stone_Management_Web",
-      "projectPath": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
+      "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\Stone_Management_Web.csproj",
       "packagesPath": "C:\\Users\\18714\\.nuget\\packages\\",
-      "outputPath": "D:\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\obj\\",
+      "outputPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\Stone_Management_Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9967,14 +10019,14 @@
         "netcoreapp3.0"
       ],
       "sources": {
-        "http://repository.septnet.cn:18081/repository/dotnet-framework-hosted/": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
-              "projectPath": "D:\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj"
+            "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj": {
+              "projectPath": "D:\\自建项目\\石材管理系统\\Stone_Management_System\\WebCore_Entity\\WebCore_Entity.csproj"
             }
           }
         }
