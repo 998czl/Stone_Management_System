@@ -3242,7 +3242,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.ComponentModel.Annotations": "4.6.0"
+          "System.ComponentModel.Annotations": "4.6.0",
+          "WebCore_Utils": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WebCore_Model.dll": {}

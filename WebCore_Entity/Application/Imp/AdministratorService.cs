@@ -3,7 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using WebCore_Entity.Application.Interface;
+using WebCore_Entity.RedisManager;
 using WebCore_Model;
+using WebCore_Model.External;
+using WebCore_Utils.ApiUtils;
 
 namespace WebCore_Entity.Application.Imp
 {
@@ -62,6 +65,34 @@ namespace WebCore_Entity.Application.Imp
 			{
 				throw new Exception(ex.Message);
 			}
+		}
+
+
+		//api登陆
+		public Token<LoginInfo> Login(string username, string password)
+		{
+			if (string.IsNullOrEmpty(username))
+			{
+				throw new MTSException("用户名不能为空");
+			}
+			if (string.IsNullOrEmpty(password))
+			{
+				throw new MTSException("密码不能为空");
+			}
+
+			var result = Db.Queryable<Administrator>().First(s => s.UserName == username && s.UserPassword == password);
+			if (result == null)
+			{
+				throw new Exception("用户名或密码不对!");
+			}
+			var loginInfo = new LoginInfo(LoginCategory.User)
+			{
+				Id = result.UserId,
+				Username = result.UserName,				
+				Nickname = result.RealName,								
+			};
+			var token = TokenHelper.Set(loginInfo, "User");
+			return token;
 		}
 	}
 }

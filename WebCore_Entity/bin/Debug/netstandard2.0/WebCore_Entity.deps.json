@@ -1495,7 +1495,8 @@
       },
       "WebCore_Model/1.0.0": {
         "dependencies": {
-          "System.ComponentModel.Annotations": "4.6.0"
+          "System.ComponentModel.Annotations": "4.6.0",
+          "WebCore_Utils": "1.0.0"
         },
         "runtime": {
           "WebCore_Model.dll": {}
