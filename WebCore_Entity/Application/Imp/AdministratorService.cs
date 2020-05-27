@@ -91,7 +91,14 @@ namespace WebCore_Entity.Application.Imp
 				Username = result.UserName,				
 				Nickname = result.RealName,								
 			};
-			var token = TokenHelper.Set(loginInfo, "User");
+			var token =  new Token<LoginInfo>()
+			{
+				Id = loginInfo.Id,
+				Signature = "123456",
+				Expiry = DateTime.UtcNow.Add(new TimeSpan(0, 30, 0)),
+				Data = loginInfo
+			};
+			//TokenHelper.Set(loginInfo, "User");
 			return token;
 		}
 	}

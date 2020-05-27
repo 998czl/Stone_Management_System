@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stone_Management_Api</name>
+    </assembly>
+    <members>
+        <member name="M:Stone_Management_Api.Controllers.HomeController.Login(Stone_Management_Api.Models.LoginModel)">
+            <summary>
+            登录
+            </summary>
+            <param name="model">登录信息</param>
+            <returns></returns>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.Frequency">
+            <summary>
+            访问频率
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyCode">
+            <summary>
+            是否验证图片验证码
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyFileUpload">
+            <summary>
+            是否验证文件上传，1：选填，2：必填
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyExcelExport">
+            <summary>
+            是否验证Excel导出
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyToken">
+            <summary>
+            是否验证Token
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyRight">
+            <summary>
+            是否验证权限
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            OnActionExecutionAsync
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiAuthorizeAttribute.VerifyLoginInfo(System.String)">
+            <summary>
+            验证登录信息
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiController._Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiController._Platform">
+            <summary>
+            平台标识
+            </summary>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiController._Ip">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiController._Mac">
+            <summary>
+            Mac地址
+            </summary>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.ApiController._LoginInfo">
+            <summary>
+            登录信息
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiController.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiController.Platform">
+            <summary>
+            平台标识
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiController.Ip">
+            <summary>
+            Ip地址
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiController.Mac">
+            <summary>
+            Mac地址
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ApiController.LoginInfo">
+            <summary>
+            登录信息
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiController.GetLoginInfo">
+            <summary>
+            获取登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiController.Ok(System.String)">
+            <summary>
+            Ok
+            </summary>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiController.Json``1(``0,System.String)">
+            <summary>
+            Json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="content">内容</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ApiController.Content``1(``0,System.String,System.String)">
+            <summary>
+            Content
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="content">内容</param>
+            <param name="contentType">内容类型</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.CustomException.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.CustomException.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.CustomException.#ctor(System.String,System.Exception)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.DateTimeHelper.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.DateTimeHelper.TimestampOfMilliseconds">
+            <summary>
+            时间戳（毫秒）
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.DateTimeHelper.TimestampOfSeconds">
+            <summary>
+            时间戳（秒）
+            </summary>
+        </member>
+        <member name="T:Stone_Management_Api.Extensions.HttpRequestExt">
+            <summary>
+            HttpRequestExt
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.HttpRequestExt.GetFullPath(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            GetFullPath
+            </summary>
+            <param name="httpRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.HttpRequestExt.GetParameters(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            获取请求参数
+            </summary>
+            <param name="httpRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.HttpRequestExt.IsMobileDevice(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            是否移动设备
+            </summary>
+            <param name="httpRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Stone_Management_Api.Extensions.IDictionaryExt">
+            <summary>
+            IDictionaryExt
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.Sort``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IComparer{``0})">
+            <summary>
+            排序
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dic"></param>
+            <param name="comparer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.SortByASCII``1(System.Collections.Generic.IDictionary{System.String,``0})">
+            <summary>
+            ASCII排序
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.ToSortedDictionary``2(System.Collections.Generic.IDictionary{``0,``1})">
+            <summary>
+            类型转换
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.FilterSort``2(System.Collections.Generic.IDictionary{``0,``1},``0[])">
+            <summary>
+            按指定键值筛选并排序
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dic"></param>
+            <param name="keys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.Remove``2(System.Collections.Generic.IDictionary{``0,``1},``0[])">
+            <summary>
+            删除指定键
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dic"></param>
+            <param name="keys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.ToQueryString(System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean,System.String[])">
+            <summary>
+            转换为QueryString
+            </summary>
+            <param name="parameters"></param>
+            <param name="ignoreNullOrEmpty"></param>
+            <param name="ignores"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.ToJoinString(System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Boolean,System.String[])">
+            <summary>
+            转换为连接字符串
+            </summary>
+            <param name="parameters"></param>
+            <param name="separator"></param>
+            <param name="ignoreNullOrEmpty"></param>
+            <param name="ignores"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.IDictionaryExt.ToXmlString(System.Collections.Generic.IDictionary{System.String,System.String},System.String[])">
+            <summary>
+            转换为Xml字符串
+            </summary>
+            <param name="parameters"></param>
+            <param name="ignores"></param>
+            <param name="ignoreNullOrEmpty"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ReturnResult`1.Request">
+            <summary>
+            Request
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ReturnResult`1.Code">
+            <summary>
+            状态代码
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ReturnResult`1.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ReturnResult`1.Content">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Extensions.ReturnResult`1.ContentType">
+            <summary>
+            内容类型
+            </summary>
+        </member>
+        <member name="M:Stone_Management_Api.Extensions.ReturnResult`1.#ctor(Microsoft.AspNetCore.Http.HttpRequest,WebCore_Utils.ApiUtils.ReturnCode,System.String,`0,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="httpRequest"></param>
+            <param name="code">结果代码</param>
+            <param name="message">消息</param>
+            <param name="content">内容</param>
+            <param name="contentType">内容类型</param>
+        </member>
+        <member name="F:Stone_Management_Api.Extensions.UtcDateTime.MinValue">
+            <summary>
+            表示 UtcDateTime 的最小值。 此字段为只读。
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Models.LoginModel.Username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Stone_Management_Api.Models.LoginModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+    </members>
+</doc>

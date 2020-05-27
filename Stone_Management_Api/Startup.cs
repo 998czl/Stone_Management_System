@@ -14,6 +14,9 @@ using Microsoft.Extensions.Logging;
 using WebCore_Entity;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Text;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.IO;
 
 namespace Stone_Management_Api
 {
@@ -44,24 +47,28 @@ namespace Stone_Management_Api
 			//配置允许跨域
 			services.AddCors(options =>
 			{
-				options.AddPolicy("CorsPolicy", policy =>
-				{
-					policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials();
-				});
+				options.AddPolicy("AllowAllOrigins",
+						builder => //builder.AllowAnyOrigin()
+						builder.WithOrigins("localhost:5000").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 			});
 
 			//注册Swagger生成器，定义一个和多个Swagger 文档
 			services.AddSwaggerGen(options =>
 			{
-				options.SwaggerDoc("v1", new Info
+				options.SwaggerDoc("v1", new OpenApiInfo
 				{
 					Title = "API 文档",
 					Version = "v1",
-					Description = "By Adai"
-				});				
+					Description = "项目所有接口说明"
+				});
+
+				//为 Swagger JSON and UI设置xml文档注释路径
+				var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+				var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+				options.IncludeXmlComments(xmlPath);
 			});
 
-			
+
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,23 +77,18 @@ namespace Stone_Management_Api
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
-				app.UseExceptionHandler();
-			}
-			else
-			{
-				app.UseExceptionHandler();
-				app.UseHsts();
-			}
+				
+			}		
 			//启用Https
 			app.UseHttpsRedirection();
 			//启用Session
 			app.UseSession();
 			//启用允许跨域
-			app.UseCors("CorsPolicy");
+			app.UseCors("AllowAllOrigins");
 
 			//使中间件服务生成Swagger作为JSON端点
 			app.UseSwagger();
-			//启用中间件以提供用户界面（HTML、js、CSS等），特别是指定JSON端点
+			////启用中间件以提供用户界面（HTML、js、CSS等），特别是指定JSON端点
 			app.UseSwaggerUI(options =>
 			{
 				options.SwaggerEndpoint("/swagger/v1/swagger.json", "V1 Docs");				

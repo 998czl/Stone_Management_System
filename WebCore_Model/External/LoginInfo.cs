@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using WebCore_Utils.ApiUtils;
 
 namespace WebCore_Model.External
 {
-	public class LoginInfo: TokenData
+	public class LoginInfo : TokenData
 	{
 		/// <summary>
 		/// 构造函数

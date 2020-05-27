@@ -25,7 +25,7 @@ namespace Stone_Management_Api.Controllers
 		/// <param name="model">登录信息</param>
 		/// <returns></returns>
 		[ApiAuthorize(VerifyCode = true)]
-		[HttpPost("/api/Login")]
+		[HttpPost("/api/Home/Login")]
 		public ReturnResult<Token<LoginInfo>> Login([FromBody] LoginModel model)
 		{
 			var _adminservice = Container.Instance.Resolve<IAdministratorService>();
