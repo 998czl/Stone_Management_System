@@ -91,5 +91,11 @@ namespace WebCore_Entity.RedisManager
 		/// </summary>
 		/// <returns></returns>
 		public static IDatabase Database => Instance.GetDatabase(Configuration.DbNumber);
+
+		/// <summary>
+		/// Db4
+		/// </summary>
+		/// <returns></returns>
+		public static IDatabase Database15 => Instance.GetDatabase(15);
 	}
 }
